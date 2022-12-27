@@ -1,0 +1,253 @@
+@media(prefers-reduced-motion: no-preference){
+    *{
+      scroll-behavior: smooth;
+    }
+  }
+  body{
+    margin: 0;
+  }
+  #navbar{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient( -30deg, #8c1aff, #d9b3ff);
+    z-index: 1; 
+  }
+  #nav-list{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly ;
+  }
+  li{
+    list-style: none;
+  }
+  li > a{
+    text-decoration: none;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+  }
+  li > a:hover{
+    transition-duration: 0.4s;
+    color: #ffdb58;
+  }
+  .welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(360deg, transparent, rgba(255, 253, 208, 0.6)), url(https://scontent.fixr3-2.fna.fbcdn.net/v/t39.30808-6/279891968_1033693110898367_7216642991523957331_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=SQv-oh9bNuwAX8DA7lg&tn=sEp6D1BAaQthPJve&_nc_ht=scontent.fixr3-2.fna&oh=00_AfDXveKSFjvUh8zz7GuvooTCfq45VQkr_nRqqo8duiaO_Q&oe=63A57800);
+    background-size: cover;
+    background-position: center;
+    font-family: Baskervville, sans-serif;
+    color: white;
+  }
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  #tagline{
+    font-size: 1.2em ;
+    font-style: oblique;
+    font-weight: normal;
+    color: ghostwhite;
+    text-shadow: 1px 1px black ;
+  }
+  #bioitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: repeating-linear-gradient(60deg, #b1a296 , #7395ae , #5d5c61)
+  }
+
+  #mepic{
+    width: 220px ;
+    height: 220px ;
+    transform: scale(1.2);
+    border-radius: 50% ;
+    margin-bottom: 5%;
+  }
+  #bio{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin: 15%;
+    text-align: center;
+    font-family: Baskervville, san-serif; 
+    margin-top: 5% ;
+    margin-bottom: 3%;
+  }
+  @media only screen and(max-width: 700px){
+    #mepic{
+      width: 220px ;
+      height: 220px ;
+      transform: scale(0.2);
+      border-radius: 50% ;
+      margin-bottom: 5%;
+    }
+    #bio{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem ;
+      margin: 15%;
+      text-align: center;
+      font-family: Baskervville, san-serif; 
+      margin-top: 5% ;
+      margin-bottom: 3%;
+    }
+    
+}
+  #skill-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+  
+  }
+  #skill-list > li{
+    border: 3px solid #b32134;
+    background-color: #b32134;
+    color: white;
+    font-family: Tahoma;
+    border-radius: 10px;
+    align-items: center;
+  }
+  #skills-head{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color:white;
+    text-align: center;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom: 2px solid gold;
+  }
+  #skills{
+    margin-top: -25px ;
+    background: repeating-linear-gradient(45deg, #b32134 0px, #7f2a3c 10px);
+    padding-bottom: 15px;
+  }
+  #projects{
+    background-image: repeating-linear-gradient(-45deg, rgba( 0, 0, 51, 0.5) 10px, rgba(0, 0, 77, 0.5) 20px), url(https://vip-go.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_407554567.jpg?w=750);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+  }
+  .project-heading{
+    font-family: Raleway, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 10%;
+    text-decoration: underline 2px;
+    padding-bottom: 10%;
+  }
+  img{
+    width: 320px;
+    height: 200px ;
+    
+  }
+  /* On screens having less than or equal to 1000px */
+  @media only screen and (max-width: 1000px ){
+    #project-tile{
+      display: grid;
+      column-gap: 10px ;
+      justify-content: center;
+      align-items: center; 
+    }
+    img{
+      width: 280px;
+      height: 180px;
+    }
+  }
+  #project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 1000px ){
+    #project-tile{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 4rem;
+      width: 320px;
+      height: 240px;
+      justify-content: center;
+      align-items: center; 
+    }
+  }
+  #project-cover{
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+  }
+  #project-cover:hover{
+    transform: scale(1.1);
+    z-index: 0;
+  }
+  #contact{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    width: auto;
+    height: 100vh;
+    background: repeating-linear-gradient(30deg, rgba(255, 215, 0, 0.5) 8px, rgba(192,192,192, 0.5) 12px), url(https://img.freepik.com/free-photo/coffee-relax_1388-75.jpg?w=996&t=st=1671747112~exp=1671747712~hmac=33d8539bdf9a53440112ec906f06f665e8bb1f4ffd0989c486525e5330b519a3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 6px solid #00004d;
+  }
+  #contact-header{
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: brown;
+  }
+  #catch-line{
+    font-size: 1.2rem;
+    font-family: Raleway, sans-serif;
+    font-style: oblique;
+  }
+  #contact-link > a{
+    display: inline-block;
+    font-family: Tahoma ;
+    padding: 25px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem ;
+    transition: transform 0.4s ease-out;
+  }
+  #contact-link > a:hover{
+    transform: translateY(-8px);
+  }
+  .footerline{
+    border-top: 5px double navy;
+  }
+  footer{
+    display: flex;
+    background: linear-gradient(45deg, silver 50%, maroon 50%);
+    width: auto;
+    height: 15vh;
+    justify-content: right;
+  }
+  footer > p{
+    padding-top: 30px;
+    font-family: Tahoma;
+    font-weight: normal;
+    color: white;
+  }
+  .projbg{
+    background-color: rgba(204, 204, 255, 0.5);
+    padding-top: 20px;
+    border-radius: 25px;
+  }
+  .projcap{
+    font-family: Raleway;
+  }
